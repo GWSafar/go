@@ -7,8 +7,10 @@ var fillInPage = (function() {
          * For language codes with a special character such as pt-BR,
          * replace names.en with names['pt-BR'].
         */
-        var cityName = geoipResponse.city.names.en || 'your city';
-
+        //var cityName = geoipResponse.city.names.en || 'your city';
+        var cityName = geoipResponse.represented_country.iso_code;
+        
+        
         document.getElementById('city').innerHTML = cityName
     };
 
