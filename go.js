@@ -1,10 +1,10 @@
 var fillInPage = (function() {
     var updateCityText = function(geoipResponse) {
   
-      var cityName = geoipResponse.country.iso_code;
+      var cName = geoipResponse.country.iso_code;
   
-      document.getElementById('country').innerHTML = cityName
-      if (cityName == 'US') {
+      document.getElementById('country').innerHTML = cName
+      if (cName != 'US') {
         //document.getElementById('main').innerHTML = ''
         document.getElementsByClassName("body lsc").innerHTML = ''
       }
