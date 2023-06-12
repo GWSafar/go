@@ -6,7 +6,8 @@ var fillInPage = (function() {
       document.getElementById('country').innerHTML = cName
       if (cName != 'US') {
         //document.getElementById('main').innerHTML = ''
-        document.getElementsByClassName("body lsc").innerHTML = ''
+        document.querySelectorAll(".body.lsc").innerHTML = ''
+
       }
     };
   
