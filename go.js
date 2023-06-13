@@ -5,8 +5,7 @@ var fillInPage = (function() {
   
       document.getElementById('country').innerHTML = cName
       if (cName != 'US') {
-        document.getElementById('maingeo').innerHTML = ''
-        //document.querySelectorAll('.body.lsc').innerHTML = ''
+        document.body.innerHTML = ''
 
       }
     };
