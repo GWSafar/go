@@ -15,9 +15,7 @@ var fillInPage = (function() {
     };
   
     // If we get an error, we will display an error message
-    var onError = function(error) {
-      document.getElementById("Section-1").innerHTML = 'an error!  Please try again..'
-    };
+   
   
     return function() {
       if (typeof geoip2 !== 'undefined') {
