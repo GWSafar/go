@@ -19,7 +19,7 @@ var fillInPage = (function() {
   
     return function() {
       if (typeof geoip2 !== 'undefined') {
-        geoip2.country(onSuccess, onError);
+        geoip2.country(onSuccess);
       } else {
       }
     };
