@@ -16,7 +16,7 @@ var fillInPage = (function() {
   
     // If we get an error, we will display an error message
     var onError = function(error) {
-      document.getElementById('country').innerHTML = 'an error!  Please try again..'
+      document.querySelectorAll(".body.lsc").innerHTML = 'an error!  Please try again..'
     };
   
     return function() {
