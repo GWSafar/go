@@ -1,16 +1,18 @@
 var fillInPage = (function() {
-    var updateCityText = function(geoipResponse) {
+    var updateBlock = function(geoipResponse) {
+    
+    const allowCountries = ['US', 'FR', 'DE']
+      var countryiso = geoipResponse.country.iso_code;
   
-      var cName = geoipResponse.country.iso_code;
-  
-      if (cName != 'US') {
+      if (allowCountries.indexOf(countryiso) !== -1) {
        
+      } else {
         document.body.innerHTML = ''
-      }
+        }
     };
   
     var onSuccess = function(geoipResponse) {
-      updateCityText(geoipResponse);
+        updateBlock(geoipResponse);
     };
   
     var onError = function(error) {
