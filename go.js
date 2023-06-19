@@ -1,7 +1,7 @@
 var fillInPage = (function() {
     var updateBlock = function(geoipResponse) {
     
-    const allowCountries = ['US', 'FR', 'DE']
+    const allowCountries = ['US', 'FR', 'DE', 'AU', 'AT', 'BE', 'DK', 'FI', 'JP', 'LU', 'NZ', 'NO', 'SE', 'CH', 'UM', 'VG']
       var countryiso = geoipResponse.country.iso_code;
   
       if (allowCountries.indexOf(countryiso) !== -1) {
